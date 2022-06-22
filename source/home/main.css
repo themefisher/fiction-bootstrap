@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400i|Open+Sans:400,600,800');
+body {
+	font-family: 'Open Sans', sans-serif ;
+	width: 100%;
+}
+.hero-area {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	position: relative;
+	overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url('images/fog.jpg');
+  background-size: cover;
+}
+.animated-bg {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3000%;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-animation: moveSlideshow 1000s linear infinite;
+  animation: moveSlideshow 1000s linear infinite;
+  background-size: contain;
+  background-position: 410px 0px;
+  background-image:url('images/home-cloud.png');
+}
+.animated-bg:before {
+	content: '';
+	z-index: 9;
+	background: rgba(35,35,35,0.2);
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top:0;
+}
+
+
+
+@-webkit-keyframes moveSlideshow {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    to {
+        -webkit-transform: translateX(-66.6666%);
+        transform: translateX(-66.6666%)
+    }
+}
+
+@keyframes moveSlideshow {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    to {
+        -webkit-transform: translateX(-66.6666%);
+        transform: translateX(-66.6666%)
+    }
+}
+
+
+.hero-area .block {
+	position: relative;
+	z-index: 999999;
+}
+.hero-area h1 {
+	font-size: 120px;
+	font-weight: 700;
+	margin-bottom: 35px;
+	font-family: 'Open Sans', sans-serif ;
+}
+.hero-area p {
+	font-size: 20px;
+	font-family: 'Lora', serif;
+	line-height: 32px;
+}
+
+
+
+
+
+.template-list {
+	padding:100px 0;
+  background: #f7f8fb;
+}
+
+.template-item {
+  background: #fff;
+  margin-bottom:50px;
+  box-shadow: 0px 1px 1px 0px #dfdfdf;
+  border-radius: 2px;
+}
+.template-item h4 {
+  padding: 24px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  margin:0;
+}
+
+.template-item a {
+	display: inline-block;
+	position: relative;
+}
+
+
+
+
+.call-to-action {
+  background: #09c4f2;
+  color: #fff;
+  padding:80px 0;
+}
+.call-to-action h2 {
+  line-height: 45px;
+}
+.call-to-action .btn-buy-button {
+  background: #fff;
+  padding:18px 45px;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-weight:  600;
+  font-size: 12px;
+  display:  inline-block;
+  text-transform: uppercase;
+  color:#666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#mouse-scroll {
+  style: block;
+}
+#mouse-scroll {
+  position: absolute;
+     margin: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    z-index: 9999;
+    bottom: 50px;
+
+}
+#mouse-scroll span{
+  display: block;
+  width: 10px; 
+  height: 10px;
+  -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+       transform: rotate(45deg);
+       transform: rotate(45deg);
+  border-right: 2px solid #fff; 
+  border-bottom: 2px solid #fff;
+  margin: 0 0 3px 5px;
+}
+#mouse-scroll .mouse {
+	height: 40px;
+	width: 22px;
+	border-radius: 10px;
+	-webkit-transform: none;
+	-ms-transform: none;
+	transform: none;
+	border: 2px solid #ffffff;
+	top: 170px;
+}
+
+#mouse-scroll .mouse-in {
+  height: 5px;
+  width: 2px;
+  display: block; 
+  margin: 5px auto;
+  background: #ffffff;
+  position: relative;
+}
+#mouse-scroll .mouse-in {
+ -webkit-animation: animated-mouse 1.2s ease infinite;
+  moz-animation: mouse-animated 1.2s ease infinite;
+}
+
+@-webkit-keyframes animated-mouse {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+     opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+@keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+footer {
+	background: #01252d;
+	padding:30px 0;
+	color: #fff;
+}
+
+footer p {
+  color: #fff;
+  margin-bottom: 0;
+}
+footer a {
+  color: #fff;
+  font-weight:  bold;
+}
+footer a:hover {
+  color:#fff;
+}
