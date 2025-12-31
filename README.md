@@ -1,6 +1,6 @@
 # Fiction Agency Template
 
-![fiction](https://demo.themefisher.com/thumbnails/fiction.png)
+![fiction](https://assets.teamosis.com/thumbs/fiction.png)
 
 <!-- download -->
 ## Download And installation
